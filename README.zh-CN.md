@@ -1,5 +1,7 @@
 # 🖼️ 智能图片拼接工具 (Image Stitcher)
 
+[中文（默认）](./README.md) | [English](./README.en.md)
+
 > 🎉 **一站式图片拼接解决方案 - 轻松将多张照片拼接成美观的拼贴画**
 
 [功能特性](#features) • [系统要求](#system-requirements) • [快速开始](#quick-start) • [安装说明](#installation) • [使用指南](#usage-guide)
