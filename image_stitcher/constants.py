@@ -1,0 +1,31 @@
+# 布局类型
+LAYOUT_HORIZONTAL = "水平"
+LAYOUT_VERTICAL = "垂直"
+LAYOUT_GRID = "网格"
+
+# 翻转模式
+FLIP_NONE = "无"
+FLIP_VERTICAL = "上下翻转"
+FLIP_HORIZONTAL = "左右翻转"
+
+# 默认值
+DEFAULT_CANVAS_WIDTH = 800
+DEFAULT_CANVAS_HEIGHT = 600
+DEFAULT_TARGET_WIDTH = 800
+DEFAULT_TARGET_HEIGHT = 600
+DEFAULT_ROWS = 2
+DEFAULT_COLS = 2
+DEFAULT_H_SPACING = 30
+DEFAULT_V_SPACING = 30
+DEFAULT_MARGIN = 0
+
+# 进度条权重
+PROGRESS_WEIGHTS = {
+    "load_images": 0.2,
+    "resize_images": 0.3,
+    "stitch_pages": 0.4,
+    "export_pages": 0.1
+}
+
+# 导出格式
+EXPORT_FORMATS = ["PNG", "JPG", "PDF"]

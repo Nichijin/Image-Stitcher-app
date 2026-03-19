@@ -1,0 +1,31 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.7z
+*.zip
+*.tar
+*.gz
+
+# PyInstaller
+*.spec.bak
+
+# IDE/editor files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project temp outputs
+temp_stitch_image_*.jpg
+
