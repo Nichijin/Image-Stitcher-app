@@ -1,8 +1,4 @@
-﻿收到，之前的翻译为了保持简洁，对“图片生成优化”、“技术架构细节”以及部分代码示例和详细对比表格进行了概括。
-
-以下是完整无删减的英文版本，包含了所有的代码块、详细的性能对比数据、完整的配置项说明以及所有的优化策略细节。
-
-<a id="english-version"></a>
+﻿<a id="english-version"></a>
 🖼️ Smart Image Stitcher (Image Stitcher)
 
 [中文（默认）](./README.md#chinese-version) | [English](#english-version)
