@@ -1188,7 +1188,7 @@ MIT License
 
 🖼️ Smart Image Stitcher (Image Stitcher)
 
-Chinese (Default) | English
+[中文](#chinese-version) | [English](#english-version)
 
 🎉 One-stop image stitching solution - Easily combine multiple photos into beautiful collages.
 
@@ -2195,7 +2195,7 @@ Last Updated: 2026-03-19
 <a id="en-overview"></a>
 ### Overview
 Image Stitcher is a Windows desktop tool for stitching multiple images into horizontal, vertical, or grid layouts with optional enhancement, pagination, and print-oriented presets.
-[Features](#en-features) • [System Requirements](#en-system-requirements) • [Quick Start](#en-quick-start) • [Installation](#en-installation) • [Usage Guide](#en-usage-guide)
+[Features](#en-features) ? [System Requirements](#en-system-requirements) ? [Quick Start](#en-quick-start) ? [Installation](#en-installation) ? [Usage Guide](#en-usage-guide)
 <a id="en-toc"></a>
 ### Table of Contents
 - [Features](#en-features)
