@@ -1,8 +1,6 @@
-# Image Stitcher (Single-Page Bilingual README)
+# 🖼️ 智能图片拼接工具 (Image Stitcher)
 
 [中文](#chinese-version) | [English](#english-version) <a id="chinese-version"></a>
-
-# 🖼️ 智能图片拼接工具 (Image Stitcher)
 
 [中文（默认）](#chinese-version) | [English](#english-version)
 
@@ -24,8 +22,8 @@
 
 快速导航
 
-需要要要快速开始要要？直接跳到 [快速开始](#quick-start) 章节。
-遇到到到技术问题到到？查看 [常见问题](#faq) 章节。
+需要快速开始？直接跳到 [快速开始](#quick-start) 章节。
+遇到技术问题？查看 [常见问题](#faq) 章节。
 
 <a id="features"></a>
 
@@ -323,43 +321,6 @@ python run.py
 }
 ```
 
-### 配置项说明
-
-```json
-{
-    "a4_mode": false,              // A4纸模式
-    "landscape": false,            // 横向模式
-    "canvas_width": 800,           // 画布宽度
-    "canvas_height": 600,          // 画布高度
-    
-    "resize": true,                // 前置统一尺寸
-    "target_width": 800,           // 目标宽度
-    "target_height": 600,          // 目标高度
-    
-    "layout": "网格",              // 布局方式
-    "rows": 2,                     // 行数
-    "cols": 4,                     // 列数
-    "h_spacing": 30,               // 水平间距
-    "v_spacing": 30,               // 垂直间距
-    
-    "multi_page": true,            // 多页拼接
-    "gen_row_reversed": false,     // 生成反转版
-    
-    "margin_top": 50,              // 上边距
-    "margin_bottom": 50,           // 下边距
-    "margin_left": 50,             // 左边距
-    "margin_right": 50,            // 右边距
-    
-    "flip_mode": "无",             // 翻转模式
-    "show_grid": false,            // 显示网格线
-    
-    "enhance_enabled": false,      // 图像增强
-    "brightness": 0,               // 亮度
-    "contrast": 0,                 // 对比度
-    "sharpness": 0                 // 锐度
-}
-```
-
 ### 方案管理
 
 - 保存方案  ：将当前配置保存为方案文件（.json格式）
@@ -371,7 +332,7 @@ python run.py
 
 > 💡   优化目标  ：在保证高质量输出的同时，最大化处理速度和最小化内存占用
 
-本工具采用用用多层优化策略用用，确保在处理大量图片时依然保持高性能和低内存占用。优化策略包括：
+本工具采用多层优化策略，确保在处理大量图片时依然保持高性能和低内存占用。优化策略包括：
 
 | 优化类型       | 说明                 | 效果          |
 | ---------- | ------------------ | ----------- |
@@ -838,7 +799,7 @@ def save_batch(images, paths, format="JPEG", quality=90):
 
 步骤1：准备图片
 
-&#x20;📂
+📂
 
 - ✅ 统一图片格式（建议JPEG）
 - ✅ 调整原始图片尺寸（建议不超过2000x2000）
@@ -847,7 +808,7 @@ def save_batch(images, paths, format="JPEG", quality=90):
 
 步骤2：配置参数
 
-&#x20;⚙️
+⚙️
 
 - ✅ 设置合适的网格尺寸
 - ✅ 启用"前置统一尺寸"
@@ -856,7 +817,7 @@ def save_batch(images, paths, format="JPEG", quality=90):
 
 步骤3：开始处理
 
-&#x20;▶️
+▶️
 
 - ✅ 预览效果
 - ✅ 调整参数
@@ -865,7 +826,7 @@ def save_batch(images, paths, format="JPEG", quality=90):
 
 步骤4：检查结果
 
-&#x20;✅
+✅
 
 - ✅ 查看拼接效果
 - ✅ 调整参数（如需要）
@@ -876,7 +837,7 @@ def save_batch(images, paths, format="JPEG", quality=90):
 
 问题1：处理速度慢
 
-&#x20;⏱️
+⏱️
 
 原因分析
 
@@ -894,7 +855,7 @@ def save_batch(images, paths, format="JPEG", quality=90):
 
 问题2：内存不足
 
-&#x20;💾
+💾
 
 原因分析
 
@@ -911,7 +872,7 @@ def save_batch(images, paths, format="JPEG", quality=90):
 
 问题3：CPU占用高
 
-&#x20;⚡
+⚡
 
 原因分析
 
@@ -927,7 +888,7 @@ def save_batch(images, paths, format="JPEG", quality=90):
 
 问题4：保存速度慢
 
-&#x20;💾
+💾
 
 原因分析
 
@@ -1234,274 +1195,279 @@ MIT License
 
 🎉 One-stop image stitching solution - Easily combine multiple photos into beautiful collages.
 
-Features • System Requirements • Quick Start • Installation • Usage Guide
+[Features](#en-features) • [System Requirements](#en-system-requirements) • [Quick Start](#en-quick-start) • [Installation](#en-installation) • [Usage Guide](#en-usage-guide)
 
 💡 First time user? Check out the Quick Start section to get up and running in 3 minutes!
 
-📚 Table of Contents
+## 📚 Table of Contents
 
-Quick Start - 🚀 Quick getting started guide
-Features - 🎯 Core and advanced features
-Installation - 📦 EXE and Source Code methods
-Usage Guide - 🎓 Detailed operation instructions
-Configuration - ⚙️ Config files and scheme management
-Image Optimization - 🚀 Detailed optimization strategies
-Architecture - 🏗️ Architecture principles and source structure
-File Structure - 📁 Project directory layout
-FAQ - ❓ Frequently asked questions
-Changelog - 📝 Version history
-Contributing - 🤝 How to contribute
-License - 📄 License info
-Acknowledgements - 🙏 Credits
+- [Quick Start](#en-quick-start) - 🚀 Quick getting started guide
+- [Features](#en-features) - 🎯 Core and advanced features
+- [Installation](#en-installation) - 📦 EXE and Source Code methods
+- [Usage Guide](#en-usage-guide) - 🎓 Detailed operation instructions
+- [Configuration](#en-configuration) - ⚙️ Config files and scheme management
+- [Image Optimization](#en-image-optimization) - 🚀 Detailed optimization strategies
+- [Architecture](#en-architecture) - 🏗️ Architecture principles and source structure
+- [FAQ](#en-faq) - ❓ Frequently asked questions
 
-Quick Navigation
+## Quick Navigation
 
-Need to get started quickly? Jump directly to the Quick Start section.
-Encountering technical issues? Check the FAQ section.
+Need to get started quickly? Jump directly to the [Quick Start](#en-quick-start) section.
+Encountering technical issues? Check the [FAQ](#en-faq) section.
 
 <a id="en-features"></a>
 
-🎯 Features
+## 🎯 Features
 
-Core Features
+### Core Features
 
-✅ Multiple Layouts: Supports horizontal, vertical, and grid layouts.
-✅ Image Enhancement: Adjust brightness, contrast, and sharpness.
-✅ Batch Processing: Supports automatic pagination for large numbers of images.
-✅ Image Flipping: Vertical flip, horizontal flip.
-✅ Reversed Version Generation: Row reversal effect in grid layout.
-✅ Grid Line Display: Visual aid feature.
-✅ A4 Paper Mode: Preset A4 paper sizes and orientations.
+- ✅ Multiple Layouts: Supports horizontal, vertical, and grid layouts
+- ✅ Image Enhancement: Adjust brightness, contrast, and sharpness
+- ✅ Batch Processing: Supports automatic pagination for large numbers of images
+- ✅ Image Flipping: Vertical flip, horizontal flip
+- ✅ Reversed Version Generation: Row reversal effect in grid layout
+- ✅ Grid Line Display: Visual aid feature
+- ✅ A4 Paper Mode: Preset A4 paper sizes and orientations
 
-Advanced Features
+### Advanced Features
 
-✅ Multi-threading: Asynchronous loading, preprocessing, stitching, and saving.
-✅ Memory Optimization: Automatic garbage collection and memory monitoring.
-✅ Config Persistence: Automatically saves and loads user configurations.
-✅ Scheme Management: Supports saving and loading stitching schemes.
-✅ Progress Monitoring: Real-time processing progress display.
+- ✅ Multi-threading: Asynchronous loading, preprocessing, stitching, and saving
+- ✅ Memory Optimization: Automatic garbage collection and memory monitoring
+- ✅ Config Persistence: Automatically saves and loads user configurations
+- ✅ Scheme Management: Supports saving and loading stitching schemes
+- ✅ Progress Monitoring: Real-time processing progress display
 
 <a id="en-system-requirements"></a>
 
-🖥️ System Requirements
+## 🖥️ System Requirements
 
-OS: Windows 10/11
-Python Version: 3.8+
-RAM: Recommended 4GB+ (for processing large batches)
-Screen Resolution: Recommended 1280x720+
+- OS: Windows 10/11
+- Python Version: 3.8+
+- RAM: Recommended 4GB+ (for processing large batches)
+- Screen Resolution: Recommended 1280x720+
+
+***
 
 <a id="en-quick-start"></a>
 
-🚀 Quick Start
+## 🚀 Quick Start
 
-⚡ 3-Minute Quick Start - The most concise beginner's guide
+> ⚡ 3-Minute Quick Start - The most concise beginner's guide
 
-🎯 Simplest Workflow (3 Steps)
+### 🎯 Simplest Workflow (3 Steps)
 
-Select Images 📂
-    Click the "Select Images" button.
-    Or drag and drop images directly into the list.
-Set Layout 📐
-    Choose layout: Horizontal / Vertical / Grid.
-    Set rows and columns (for Grid mode).
-Start Stitching ▶️
-    Click the "Start Stitching" button.
-    Wait for processing to complete.
-    View the result.
+1. **Select Images** 📂
+   - Click the "Select Images" button
+   - Or drag and drop images directly into the list
 
-💡 Typical Scenarios
-Scenario   Recommended Settings   Description
-Simple Stitch   Horizontal/Vertical   2-10 images, quick stitch
+2. **Set Layout** 📐
+   - Choose layout: Horizontal / Vertical / Grid
+   - Set rows and columns (for Grid mode)
 
-Photo Wall   Grid Layout   4-20 images, 2-4 rows, 2-4 cols
+3. **Start Stitching** ▶️
+   - Click the "Start Stitching" button
+   - Wait for processing to complete
+   - View the result
 
-Batch Print   A4 Mode   Preset print size, precise layout
+### 💡 Typical Scenarios
 
-📊 Performance Reference
-Image Count   Processing Time   Memory Usage   Recommended Settings
-1-10   
+| Scenario     | Recommended Settings   | Description              |
+| ------------ | --------------------- | ------------------------ |
+| Simple Stitch   | Horizontal/Vertical   | 2-10 images, quick stitch |
+| Photo Wall   | Grid Layout           | 4-20 images, 2-4 rows, 2-4 cols |
+| Batch Print  | A4 Mode               | Preset print size, precise layout |
+
+### 📊 Performance Reference
+
+| Image Count   | Processing Time   | Memory Usage   | Recommended Settings     |
+| ------------- | ----------------- | --------------- | ---------------------- |
+| 1-10          | <10s              | <500MB          | High quality, enhancement on |
+| 10-50         | 10-30s            | 500MB-1GB       | Medium quality          |
+| 50-100        | 30-60s            | 1GB+            | Lower resolution        |
+| 100+          | 1-2min            | 2GB+            | Batch processing        |
+
+### ⚠️ Quick Troubleshooting
+
+| Problem       | Solution                 |
+| ------------- | ----------------------- |
+| Out of memory | Reduce image count, turn off enhancement |
+| Too slow      | Lower resolution, reduce thread count |
+| Save too slow | Use SSD, lower quality      |
+
+> Need more details? Check out the [Usage Guide](#en-usage-guide) section.
+> Technical issues? Check the [FAQ](#en-faq) section.
+
+***
 
 <a id="en-installation"></a>
 
-📦 Installation
+## 📦 Installation
 
-Method 1: Using Packaged EXE (Recommended)
+### Method 1: Using Packaged EXE (Recommended)
 
-Download the dist/ImageStitcher.exe file.
-Double-click to run; no Python installation required.
+1. Download the `dist/ImageStitcher.exe` file
+2. Double-click to run; no Python installation required
 
-Method 2: Running from Source
+### Method 2: Running from Source
 
-Clone or download the project locally.
-Install dependencies:
+1. Clone or download the project locally
+2. Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-Run the application:
+3. Run the application:
 
+```bash
 python run.py
+```
 
-Dependencies
-Package   Purpose   Required?
-Pillow (PIL)   Image Processing   ✅ Yes
+### Dependencies
 
-numpy   Numerical Computing   ✅ Yes
+| Package          | Purpose              | Required? |
+| ---------------- | ------------------- | --------- |
+| Pillow (PIL)     | Image Processing   | ✅ Yes    |
+| numpy            | Numerical Computing | ✅ Yes    |
+| psutil           | System Monitoring   | 🟡 Optional |
 
-psutil   System Monitoring   🟡 Optional
+***
 
 <a id="en-usage-guide"></a>
 
-🚀 Usage Guide
+## 🚀 Usage Guide
 
-Launch Application
+### Launch Application
 
-Run ImageStitcher.exe or python run.py to start.
+Run `ImageStitcher.exe` or `python run.py` to start.
 
-Basic Workflow
+### Basic Workflow
 
-Select Images
-    Click "Select Images".
-    Supports multi-select.
-    Or drag and drop images into the list.
-Configure Parameters
-    Set layout (Horizontal/Vertical/Grid).
-    Configure grid parameters (Rows, Cols, Spacing).
-    Set image size and enhancement parameters.
-    Configure margins and flip modes.
-Start Stitching
-    Click "Start Stitching".
-    Wait for completion.
-    View results.
+1. **Select Images**
+   - Click "Select Images"
+   - Supports multi-select
+   - Or drag and drop images into the list
 
-Detailed Operations
+2. **Configure Parameters**
+   - Set layout (Horizontal/Vertical/Grid)
+   - Configure grid parameters (Rows, Cols, Spacing)
+   - Set image size and enhancement parameters
+   - Configure margins and flip modes
 
-Select Images
+3. **Start Stitching**
+   - Click "Start Stitching"
+   - Wait for completion
+   - View results
 
-Add Images: Click "Select Images" to choose files.
-Clear List: Click "Clear List" to remove all.
-Delete Selected: Select images in the list and click "Delete Selected".
+### Detailed Operations
 
-Configure Layout
+#### 1. Select Images
 
-Horizontal Layout
-Images arranged in a single row.
-Ideal for banners or long strips.
+- **Add Images**: Click "Select Images" to choose files
+- **Clear List**: Click "Clear List" to remove all
+- **Delete Selected**: Select images in the list and click "Delete Selected"
 
-Vertical Layout
-Images arranged in a single column.
-Ideal for vertical compositions.
+#### 2. Configure Layout
 
-Grid Layout
-Images arranged in rows and columns.
-Supports custom rows and columns.
-Supports automatic pagination for large batches.
+**Horizontal Layout**
+- Images arranged in a single row
+- Ideal for banners or long strips
 
-Image Enhancement
+**Vertical Layout**
+- Images arranged in a single column
+- Ideal for vertical compositions
+
+**Grid Layout**
+- Images arranged in rows and columns
+- Supports custom rows and columns
+- Supports automatic pagination for large batches
+
+#### 3. Image Enhancement
 
 Available when "Uniform Size Pre-processing" is checked:
 
-Target Width/Height: Uniformly resize images.
-Brightness: Adjust (-100 ~ +100).
-Contrast: Adjust (-100 ~ +100).
-Sharpness: Adjust (-100 ~ +100).
+- **Target Width/Height**: Uniformly resize images
+- **Brightness**: Adjust (-100 ~ +100)
+- **Contrast**: Adjust (-100 ~ +100)
+- **Sharpness**: Adjust (-100 ~ +100)
 
-Flip Mode
+#### 4. Flip Mode
 
-None: No flip.
-Vertical Flip: Flip vertically.
-Horizontal Flip: Flip horizontally.
+- **None**: No flip
+- **Vertical Flip**: Flip vertically
+- **Horizontal Flip**: Flip horizontally
 
-Reversed Version Generation
+#### 5. Reversed Version Generation
 
 In Grid Layout, checking "Generate Reversed Version" will:
 
-Reverse the order of images in each row.
-Empty slots participate in the reversal.
-Generate files with a _reversed suffix.
+- Reverse the order of images in each row
+- Empty slots participate in the reversal
+- Generate files with a `_reversed` suffix
 
-A4 Paper Mode
+#### 6. A4 Paper Mode
 
-Preset A4 size (210mm x 297mm).
-Supports Landscape and Portrait.
-Convenient for printing and layout.
+- Preset A4 size (210mm x 297mm)
+- Supports Landscape and Portrait
+- Convenient for printing and layout
 
-Practical Tips
+### Practical Tips
 
-Batch Processing Large Numbers of Images
+#### Batch Processing Large Numbers of Images
 
-Set appropriate rows/cols (e.g., 2 rows, 4 cols).
-Check "Multi-page Stitching".
-The program automatically paginates.
-Can generate reversed versions simultaneously.
+1. Set appropriate rows/cols (e.g., 2 rows, 4 cols)
+2. Check "Multi-page Stitching"
+3. The program automatically paginates
+4. Can generate reversed versions simultaneously
 
-Creating Special Effects
+#### Creating Special Effects
 
-Combine "Horizontal Flip" with "Reversed Version" for mirror effects.
-Adjust brightness/contrast to improve visual consistency.
-Enable "Show Grid Lines" to help align images.
+1. Combine "Horizontal Flip" with "Reversed Version" for mirror effects
+2. Adjust brightness/contrast to improve visual consistency
+3. Enable "Show Grid Lines" to help align images
 
 <a id="en-configuration"></a>
 
-⚙️ Configuration
+## ⚙️ Configuration
 
-📁 Config File Location
+### 📁 Config File Location
 
-Saved in the project root directory: image_stitcher_config.json
+Saved in the project root directory: `image_stitcher_config.json`
 
-💡 Tip: Configurations are saved automatically and loaded on the next startup.
+> 💡 Tip: Configurations are saved automatically and loaded on the next startup.
 
-🔧 Configuration Items
-Key   Type   Default   Description
-a4_mode   boolean   false   A4 Mode (auto-sets canvas size)
+### 🔧 Configuration Items
 
-landscape   boolean   false   Landscape Mode (A4 horizontal)
+| Configuration Key    | Type      | Default   | Description                              |
+| ------------------- | --------- | --------- | ---------------------------------------- |
+| a4_mode             | boolean   | false     | A4 Mode (auto-sets canvas size)          |
+| landscape           | boolean   | false     | Landscape Mode (A4 horizontal)          |
+| canvas_width        | integer   | 800       | Canvas Width (pixels)                    |
+| canvas_height       | integer   | 600       | Canvas Height (pixels)                   |
+| resize              | boolean   | true      | Uniform Size Pre-processing             |
+| target_width        | integer   | 800       | Target Width (pixels)                    |
+| target_height       | integer   | 600       | Target Height (pixels)                   |
+| layout              | string    | "Horizontal" | Layout: Horizontal/Vertical/Grid      |
+| rows                | integer   | 2         | Grid Rows                                |
+| cols                | integer   | 4         | Grid Columns                             |
+| h_spacing           | integer   | 30        | Horizontal Spacing (pixels)             |
+| v_spacing           | integer   | 30        | Vertical Spacing (pixels)                |
+| multi_page          | boolean   | true      | Multi-page Stitching (Auto-pagination) |
+| gen_row_reversed    | boolean   | false     | Generate Row Reversed Version           |
+| margin_top          | integer   | 0         | Top Margin (pixels)                      |
+| margin_bottom       | integer   | 0         | Bottom Margin (pixels)                   |
+| margin_left         | integer   | 0         | Left Margin (pixels)                      |
+| margin_right        | integer   | 0         | Right Margin (pixels)                     |
+| flip_mode           | string    | "None"    | Flip: None/Vertical/Horizontal          |
+| show_grid           | boolean   | false     | Show Grid Lines (Debug)                 |
+| enhance_enabled     | boolean   | false     | Image Enhancement Enabled               |
+| brightness          | integer   | 0         | Brightness (-100~100)                   |
+| contrast            | integer   | 0         | Contrast (-100~100)                     |
+| sharpness           | integer   | 0         | Sharpness (0~100)                       |
 
-canvas_width   integer   800   Canvas Width (pixels)
+### 📝 JSON Configuration Example
 
-canvas_height   integer   600   Canvas Height (pixels)
-
-resize   boolean   true   Uniform Size Pre-processing
-
-target_width   integer   800   Target Width (pixels)
-
-target_height   integer   600   Target Height (pixels)
-
-layout   string   "Horizontal"   Layout: Horizontal/Vertical/Grid
-
-rows   integer   2   Grid Rows
-
-cols   integer   4   Grid Columns
-
-h_spacing   integer   30   Horizontal Spacing (pixels)
-
-v_spacing   integer   30   Vertical Spacing (pixels)
-
-multi_page   boolean   true   Multi-page Stitching (Auto-pagination)
-
-gen_row_reversed   boolean   false   Generate Row Reversed Version
-
-margin_top   integer   0   Top Margin (pixels)
-
-margin_bottom   integer   0   Bottom Margin (pixels)
-
-margin_left   integer   0   Left Margin (pixels)
-
-margin_right   integer   0   Right Margin (pixels)
-
-flip_mode   string   "None"   Flip: None/Vertical/Horizontal
-
-show_grid   boolean   false   Show Grid Lines (Debug)
-
-enhance_enabled   boolean   false   Image Enhancement Enabled
-
-brightness   integer   0   Brightness (-100~100)
-
-contrast   integer   0   Contrast (-100~100)
-
-sharpness   integer   0   Sharpness (0~100)
-
-📝 JSON Configuration Example
-
+```json
 {
     "a4_mode": false,
     "landscape": false,
@@ -1534,61 +1500,65 @@ sharpness   integer   0   Sharpness (0~100)
     "contrast": 0,
     "sharpness": 0
 }
+```
 
-Scheme Management
+### Scheme Management
 
-Save Scheme: Save current config as a .json file.
-Load Scheme: Load a previously saved scheme.
+- **Save Scheme**: Save current config as a .json file
+- **Load Scheme**: Load a previously saved scheme
 
 <a id="en-image-optimization"></a>
 
-� Image Generation Optimization
+## 🚀 Image Generation Optimization
 
-�💡 Goal: Maximize processing speed and minimize memory usage while maintaining high-quality output.
+> 💡 Goal: Maximize processing speed and minimize memory usage while maintaining high-quality output.
 
 This tool employs a multi-layer optimization strategy to ensure high performance even with large image batches.
-Optimization Type   Description   Effect
-🔄 Parallel Processing   Multi-threaded pipeline utilizing CPU resources   Speed ↑ 62.5%
 
-💾 Memory Management   Auto GC, monitoring, dynamic adjustment   Memory ↓ 52%
+| Optimization Type    | Description                                      | Effect               |
+| ------------------- | ------------------------------------------------ | ------------------- |
+| 🔄 Parallel Processing | Multi-threaded pipeline utilizing CPU resources | Speed ↑ 62.5%       |
+| 💾 Memory Management  | Auto GC, monitoring, dynamic adjustment         | Memory ↓ 52%        |
+| ⚡ Algorithm Optimization | Efficient image processing algorithms & data structures | CPU Utilization ↑ 58% |
+| 📤 I/O Optimization    | Async saving, batch processing, smart caching   | File Size ↓ 10%     |
 
-⚡ Algorithm Optimization   Efficient image processing algorithms & data structures   CPU Utilization ↑ 58%
+***
 
-📤 I/O Optimization   Async saving, batch processing, smart caching   File Size ↓ 10%
+### 🌊 1. Multi-threaded Pipeline Processing
 
-🌊 1. Multi-threaded Pipeline Processing
+#### 📊 Pipeline Architecture Diagram
 
-📊 Pipeline Architecture Diagram
-
+```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │  Image Load │ →  │   Resize    │ →  │ Enhancement │ →  │ Grid Stitch │
-│ (Multi-thread)│  │ (Multi-thread)│  │ (Multi-thread)│  │ (Multi-thread)│
+│(Multi-thread)│   │(Multi-thread)│   │(Multi-thread)│   │(Multi-thread)│
 └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
         ↓                    ↓                    ↓                    ↓
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │ Post-Process│ →  │ Async Save  │    │             │    │             │
-│  (Flip etc) │    │ (Multi-thread)│    │             │    │             │
+│  (Flip etc) │    │(Multi-thread)│    │             │    │             │
 └─────────────┘    └─────────────┘    │             │    │             │
                                       └─────────────┘    └─────────────┘
+```
 
-⚙️ Pipeline Stage Details
-Stage   Function   Optimization Measures   Performance Gain
-Stage 1 📦 Load   Parallel loading of multiple images   Lazy loading, format support   67%
+#### ⚙️ Pipeline Stage Details
 
-Stage 2 📐 Resize   Resize images to target size   LANCZOS/BICUBIC algorithms   68%
+| Stage         | Function                              | Optimization Measures              | Performance Gain |
+| ------------- | ------------------------------------- | ---------------------------------- | --------------- |
+| Stage 1 📦 Load    | Parallel loading of multiple images   | Lazy loading, format support       | 67%             |
+| Stage 2 📐 Resize  | Resize images to target size          | LANCZOS/BICUBIC algorithms         | 68%             |
+| Stage 3 🎨 Enhance | Apply brightness, contrast, sharpness | ImageEnhance module                | -               |
+| Stage 4 🧩 Stitch   | Efficient stitching using NumPy      | Canvas pre-allocation, vectorization | 75%            |
+| Stage 5 🔄 Post     | Apply flips and reversal effects     | Batch processing                   | -               |
+| Stage 6 💾 Save     | Asynchronous saving                  | JPEG optimization, batch save      | 51%             |
 
-Stage 3 🎨 Enhance   Apply brightness, contrast, sharpness   ImageEnhance module   -
+***
 
-Stage 4 🧩 Stitch   Efficient stitching using NumPy   Canvas pre-allocation, vectorization   75%
+### 💾 2. Memory Management Optimization
 
-Stage 5 🔄 Post   Apply flips and reversal effects   Batch processing   -
+#### 🧹 Automatic Garbage Collection
 
-Stage 6 💾 Save   Asynchronous saving   JPEG optimization, batch save   51%
-
-💾 2. Memory Management Optimization
-
-🧹 Automatic Garbage Collection
-
+```python
 import gc
 
 def process_batch(images):
@@ -1600,15 +1570,17 @@ def process_batch(images):
     gc.collect()
     
     return results
+```
 
-Optimization Measures:
-✅ Regular cleanup of temporary objects.
-✅ Release unused image objects.
-✅ Reduce memory fragmentation.
-✅ Prevent memory leaks.
+**Optimization Measures:**
+- ✅ Regular cleanup of temporary objects
+- ✅ Release unused image objects
+- ✅ Reduce memory fragmentation
+- ✅ Prevent memory leaks
 
-📈 Memory Monitoring
+#### 📈 Memory Monitoring
 
+```python
 import psutil
 
 def monitor_memory():
@@ -1620,15 +1592,17 @@ def monitor_memory():
     if mem_mb > 2048:  # Warning if over 2GB
         print("⚠️ Warning: Memory usage exceeds 2GB")
         gc.collect()
+```
 
-Monitoring Features:
-📊 Real-time memory usage tracking.
-⚠️ Warnings when thresholds are exceeded.
-🔄 Automatic strategy adjustment.
-📝 Logging of memory usage history.
+**Monitoring Features:**
+- 📊 Real-time memory usage tracking
+- ⚠️ Warnings when thresholds are exceeded
+- 🔄 Automatic strategy adjustment
+- 📝 Logging of memory usage history
 
-🎛️ Dynamic Pipeline Length Adjustment
+#### 🎛️ Dynamic Pipeline Length Adjustment
 
+```python
 import os
 from concurrent.futures import ThreadPoolExecutor
 
@@ -1645,21 +1619,24 @@ def calculate_thread_pool_sizes():
         'load': load_threads,
         'save': save_threads
     }
+```
 
-Adjustment Strategy:
-Resource   Adjustment Method   Description
-CPU Cores   Threads = min(8, cpu_count)   Maximize CPU utilization
+**Adjustment Strategy:**
 
-RAM Size   Threads = min(4, cpu_count // 2)   Prevent out-of-memory errors
+| Resource     | Adjustment Method                      | Description              |
+| ------------ | -------------------------------------- | ------------------------ |
+| CPU Cores    | Threads = min(8, cpu_count)            | Maximize CPU utilization |
+| RAM Size     | Threads = min(4, cpu_count // 2)       | Prevent out-of-memory   |
+| Load         | Dynamic Adjustment                    | Adjust based on real-time load |
+| Monitoring   | Real-time Monitoring                   | Ensure system stability |
 
-Load   Dynamic Adjustment   Adjust based on real-time load
+***
 
-Monitoring   Real-time Monitoring   Ensure system stability
+### 🖼️ 3. Image Processing Optimization
 
-🖼️ 3. Image Processing Optimization
+#### 📏 Fast Resizing
 
-📏 Fast Resizing
-
+```python
 from PIL import Image
 
 def fast_load_and_resize(path, target_w, target_h):
@@ -1667,25 +1644,26 @@ def fast_load_and_resize(path, target_w, target_h):
     img = Image.open(path)
     img = img.resize((target_w, target_h), Image.LANCZOS)
     return img
+```
 
-Scaling Algorithm Comparison:
-Algorithm   Speed   Quality   Best For   Recommendation
-🥇 LANCZOS   Medium   ⭐⭐⭐⭐⭐   Downscaling   ⭐⭐⭐⭐⭐
+**Scaling Algorithm Comparison:**
 
-🥈 BICUBIC   Medium   ⭐⭐⭐⭐   General Use   ⭐⭐⭐⭐⭐
+| Algorithm   | Speed   | Quality   | Best For      | Recommendation |
+| ----------- | ------- | --------- | ------------- | -------------- |
+| 🥇 LANCZOS  | Medium  | ⭐⭐⭐⭐⭐   | Downscaling   | ⭐⭐⭐⭐⭐        |
+| 🥈 BICUBIC  | Medium  | ⭐⭐⭐⭐    | General Use   | ⭐⭐⭐⭐⭐        |
+| 🥉 BILINEAR | Fast    | ⭐⭐⭐     | Upscaling     | ⭐⭐⭐⭐         |
+| NEAREST     | Fast    | ⭐⭐       | Indexed Images | ⭐⭐           |
 
-🥉 BILINEAR   Fast   ⭐⭐⭐   Upscaling   ⭐⭐⭐⭐
+**Algorithm Selection Advice:**
+- 📉 Downscaling: Use LANCZOS (Highest quality)
+- ↔️ General: Use BICUBIC (Balance of quality/speed)
+- 📈 Upscaling: Use BILINEAR (Fast speed)
+- 📑 Indexed: Use NEAREST (For indexed images)
 
-NEAREST   Fast   ⭐⭐   Indexed Images   ⭐⭐
+#### 📦 Batch Processing
 
-Algorithm Selection Advice:
-📉 Downscaling: Use LANCZOS (Highest quality).
-↔️ General: Use BICUBIC (Balance of quality/speed).
-📈 Upscaling: Use BILINEAR (Fast speed).
-📑 Indexed: Use NEAREST (For indexed images).
-
-📦 Batch Processing
-
+```python
 from concurrent.futures import ThreadPoolExecutor
 
 def process_image_batch(image_paths, target_size, enhance_params):
@@ -1697,16 +1675,18 @@ def process_image_batch(image_paths, target_size, enhance_params):
         ]
         results = [f.result() for f in futures]
     return results
+```
 
-Optimization Advantages:
-⚡ Reduced thread creation overhead.
-🚀 Improved CPU utilization.
-💾 Lower peak memory usage.
-⏱️ Faster processing speed.
+**Optimization Advantages:**
+- ⚡ Reduced thread creation overhead
+- 🚀 Improved CPU utilization
+- 💾 Lower peak memory usage
+- ⏱️ Faster processing speed
 
-🗃️ Smart Caching
+#### 🗃️ Smart Caching
 
-Cache processed images
+```python
+# Cache processed images
 cache = {}
 cache_limit = 100
 
@@ -1726,17 +1706,21 @@ def get_processed_image(path, params):
     cache[key] = img
     
     return img
+```
 
-Caching Strategy:
-🔄 Avoid re-processing.
-💾 Reduce disk reads.
-⏱️ Improve processing speed.
-📏 Limit cache size.
+**Caching Strategy:**
+- 🔄 Avoid re-processing
+- 💾 Reduce disk reads
+- ⏱️ Improve processing speed
+- 📏 Limit cache size
 
-🧩 4. Grid Stitching Optimization
+***
 
-🚀 NumPy Acceleration
+### 🧩 4. Grid Stitching Optimization
 
+#### 🚀 NumPy Acceleration
+
+```python
 import numpy as np
 from PIL import Image
 
@@ -1767,59 +1751,66 @@ def stitch_grid_numpy(images, rows, cols, h_spacing, v_spacing, margins, target_
         canvas[y:y+h, x:x+w] = img_np
     
     return Image.fromarray(canvas)
+```
 
-NumPy Advantages:
-Feature   Description   Effect
-🚀 Vectorization   Uses NumPy array operations   10-100x faster
+**NumPy Advantages:**
 
-🎯 Less Python Loops   Avoids Python-level loops   Reduced overhead
+| Feature            | Description                    | Effect               |
+| ----------------- | ------------------------------ | ------------------- |
+| 🚀 Vectorization   | Uses NumPy array operations    | 10-100x faster      |
+| 🎯 Less Python Loops | Avoids Python-level loops    | Reduced overhead    |
+| 📦 Contiguous Memory | Arrays stored contiguously  | Cache friendly       |
+| 🧮 Multi-dimensional | Supports multi-dim arrays   | Flexible & Efficient |
 
-📦 Contiguous Memory   Arrays stored contiguously   Cache friendly
+#### 📐 Canvas Pre-allocation
 
-🧮 Multi-dimensional   Supports multi-dim arrays   Flexible & Efficient
-
-📐 Canvas Pre-allocation
-
-Pre-calculate canvas size
+```python
+# Pre-calculate canvas size
 canvas_width = margin_left + margin_right + cols * width + (cols-1) * spacing
 canvas_height = margin_top + margin_bottom + rows * height + (rows-1) * spacing
 canvas = Image.new('RGB', (canvas_width, canvas_height), (255, 255, 255))
+```
 
-Pre-allocation Advantages:
-Feature   Description   Effect
-🎯 One-time Alloc   Pre-calculate required memory   Avoids dynamic expansion
+**Pre-allocation Advantages:**
 
-💾 Less Fragmentation   Allocate memory once   Reduces fragmentation
+| Feature         | Description                  | Effect                   |
+| --------------- | ---------------------------- | ------------------------ |
+| 🎯 One-time Alloc | Pre-calculate required memory | Avoids dynamic expansion |
+| 💾 Less Fragmentation | Allocate memory once     | Reduces fragmentation    |
+| 🚀 Faster Access   | Contiguous memory access   | Improves access speed    |
 
-🚀 Faster Access   Contiguous memory access   Improves access speed
+#### 🛠️ Memory Optimization Tricks
 
-🛠️ Memory Optimization Tricks
-
-Use uint8 type to reduce memory usage
+```python
+# Use uint8 type to reduce memory usage
 canvas = np.zeros((height, width, 3), dtype=np.uint8)
 
-Avoid unnecessary copies
+# Avoid unnecessary copies
 img_np = np.array(img, copy=False)
 
-Use views instead of copies
+# Use views instead of copies
 sub_canvas = canvas[y:y+h, x:x+w]
+```
 
-Trick Explanations:
-📉 Use uint8: Reduces memory by 50% (from float64 to uint8).
-🔄 Avoid Copy: Use copy=False to avoid unnecessary memory copying.
-👁️ Use Views: Use slicing to create views instead of copying.
+**Trick Explanations:**
+- 📉 Use uint8: Reduces memory by 50% (from float64 to uint8)
+- 🔄 Avoid Copy: Use copy=False to avoid unnecessary memory copying
+- 👁️ Use Views: Use slicing to create views instead of copying
 
-💾 5. Asynchronous Saving Optimization
+***
 
-🔄 Multi-threaded Saving
+### 💾 5. Asynchronous Saving Optimization
 
+#### 🔄 Multi-threaded Saving
+
+```python
 from concurrent.futures import ThreadPoolExecutor
 import queue
 
 class AsyncSaver:
     """Async Saver - Does not block main thread"""
     
-    def init(self, max_workers=4):
+    def __init__(self, max_workers=4):
         self.save_queue = queue.Queue()
         self.executor = ThreadPoolExecutor(max_workers=max_workers)
         self._shutdown = False
@@ -1843,214 +1834,237 @@ class AsyncSaver:
                 self.save_queue.task_done()
             except queue.Empty:
                 continue
+```
 
-Multi-threading Advantages:
-Feature   Description   Effect
-🚫 Non-blocking   Saving happens in background   Smooth UI
+**Multi-threading Advantages:**
 
-📦 Parallel Save   Multiple images saved simultaneously   Reduced wait time
+| Feature          | Description                    | Effect         |
+| ---------------- | ------------------------------ | -------------- |
+| 🚫 Non-blocking  | Saving happens in background   | Smooth UI      |
+| 📦 Parallel Save | Multiple images saved simultaneously | Reduced wait time |
+| 📈 Throughput    | Continuous processing of save tasks | Higher efficiency |
 
-📈 Throughput   Continuous processing of save tasks   Higher efficiency
+#### 📷 JPEG Optimization
 
-📷 JPEG Optimization
-
+```python
 img.save(path, "JPEG", 
          quality=90,        # Quality 90, balance size/quality
          optimize=True,     # Optimize encoding
          progressive=True)  # Progressive loading
+```
 
-Parameter Explanation:
-Parameter   Recommended   Description   File Size Impact
-quality   90   90% quality   ⭐⭐⭐⭐⭐
+**Parameter Explanation:**
 
-optimize   True   Optimize Huffman coding   ⭐⭐⭐⭐
+| Parameter     | Recommended | Description              | File Size Impact |
+| ------------- | ----------- | ------------------------ | ---------------- |
+| quality       | 90          | 90% quality              | ⭐⭐⭐⭐⭐          |
+| optimize      | True        | Optimize Huffman coding  | ⭐⭐⭐⭐           |
+| progressive   | True        | Progressive JPEG         | ⭐⭐             |
 
-progressive   True   Progressive JPEG   ⭐⭐
+**Quality Comparison:**
 
-Quality Comparison:
-Quality   File Size   Image Quality   Recommendation
-50   📉 Small   ⭐⭐ Poor   ❌ Not Recommended
+| Quality   | File Size   | Image Quality   | Recommendation      |
+| --------- | ----------- | --------------- | ------------------ |
+| 50        | 📉 Small    | ⭐⭐ Poor        | ❌ Not Recommended |
+| 75        | 📊 Medium   | ⭐⭐⭐ Fair       | ⭐⭐⭐              |
+| 90        | 📈 Moderate | ⭐⭐⭐⭐ Good     | ⭐⭐⭐⭐⭐ Recommended |
+| 95        | 📉 Large    | ⭐⭐⭐⭐⭐ Excellent | ⭐⭐⭐⭐           |
+| 100       | 📉 Very Large | ⭐⭐⭐⭐⭐ Best  | ⭐⭐               |
 
-75   📊 Medium   ⭐⭐⭐ Fair   ⭐⭐⭐
+#### 📦 Batch Saving
 
-90   📈 Moderate   ⭐⭐⭐⭐ Good   ⭐⭐⭐⭐⭐ Recommended
-
-95   📉 Large   ⭐⭐⭐⭐⭐ Excellent   ⭐⭐⭐⭐
-
-100   📉 Very Large   ⭐⭐⭐⭐⭐ Best   ⭐⭐
-
-📦 Batch Saving
-
+```python
 def save_batch(images, paths, format="JPEG", quality=90):
     """Batch save images - Reduce disk I/O"""
     for img, path in zip(images, paths):
         img.save(path, format, quality=quality, optimize=True)
+```
 
-Batch Advantages:
-Feature   Description   Effect
-📉 Less I/O   Batch processing reduces I/O calls   Faster speed
+**Batch Advantages:**
 
-🚀 Throughput   Continuous writing to disk   Less waiting
+| Feature       | Description                  | Effect         |
+| ------------- | ---------------------------- | -------------- |
+| 📉 Less I/O   | Batch processing reduces I/O calls | Faster speed |
+| 🚀 Throughput | Continuous writing to disk   | Less waiting   |
+| 💾 Less Overhead | Reduced filesystem overhead | Higher efficiency |
 
-💾 Less Overhead   Reduced filesystem overhead   Higher efficiency
+***
 
-⚡ 6. Practical Optimization Tips
+### ⚡ 6. Practical Optimization Tips
 
-📊 Batch Processing Recommendations
-Count   Mode   Resolution   Enhancement   Reversed
-1-10   Single Page   High   ✅ On   ✅ On
+#### 📊 Batch Processing Recommendations
 
-10-100   Multi-page   Medium   ⚠️ Low   ✅ On
+| Image Count   | Mode         | Resolution   | Enhancement   | Reversed      |
+| ------------- | ------------ | ------------ | ------------- | ------------- |
+| 1-10          | Single Page  | High         | ✅ On         | ✅ On         |
+| 10-100        | Multi-page   | Medium       | ⚠️ Low        | ✅ On         |
+| 100+          | Multi-page   | Low          | ❌ Off        | ❌ Off        |
 
-100+   Multi-page   Low   ❌ Off   ❌ Off
+**Advice:**
+- 📝 Small Batch: Quality first, enable enhancement and reversal
+- 📦 Medium Batch: Balance quality/speed, lower params slightly
+- 🚀 Large Batch: Speed first, disable enhancement and reversal
 
-Advice:
-📝 Small Batch: Quality first, enable enhancement and reversal.
-📦 Medium Batch: Balance quality/speed, lower params slightly.
-🚀 Large Batch: Speed first, disable enhancement and reversal.
+#### ⚙️ Performance Tuning Parameters
 
-⚙️ Performance Tuning Parameters
-Parameter   Recommended   Description   Impact
-Target Size   800x600   Balance quality/speed   ⭐⭐⭐⭐⭐
+| Parameter          | Recommended   | Description           | Impact          |
+| ------------------ | ------------- | --------------------- | --------------- |
+| Target Size        | 800x600       | Balance quality/speed | ⭐⭐⭐⭐⭐         |
+| Brightness/Contrast | 0             | Disable enhancement   | ⭐⭐⭐⭐          |
+| JPEG Quality       | 90            | Best quality/size ratio | ⭐⭐⭐⭐⭐       |
+| Thread Count       | Auto          | Based on CPU cores    | ⭐⭐⭐⭐          |
 
-Brightness/Contrast   0   Disable enhancement   ⭐⭐⭐⭐
+#### 💻 Memory Optimization Advice
 
-JPEG Quality   90   Best quality/size ratio   ⭐⭐⭐⭐⭐
+**Low Memory Systems (<4GB):**
+- 📉 Reduce simultaneous image count
+- ❌ Disable image enhancement
+- 📏 Use lower resolution
+- 📦 Process in batches
+- ❌ Don't enable reversed version
 
-Thread Count   Auto   Based on CPU cores   ⭐⭐⭐⭐
+**High Memory Systems (>8GB):**
+- 📈 Can process more images
+- ✅ Enable image enhancement
+- 📐 Use higher resolution
+- 📦 Batch processing
+- ✅ Enable reversed version
 
-💻 Memory Optimization Advice
+***
 
-Low Memory Systems (8GB):
-📈 Can process more images.
-✅ Enable image enhancement.
-📐 Use higher resolution.
-📦 Batch processing.
-✅ Enable reversed versions.
+### 📈 7. Performance Benchmarks
 
-📈 7. Performance Benchmarks
+#### 🧪 Test Environment
 
-🧪 Test Environment
-Component   Configuration
-CPU   Intel Core i7-10700 (8 Cores, 16 Threads)
+| Component   | Configuration                              |
+| ----------- | ----------------------------------------- |
+| CPU         | Intel Core i7-10700 (8 Cores, 16 Threads) |
+| RAM         | 16GB DDR4                                 |
+| OS          | Windows 11                                |
+| Images      | 100 JPEGs (4000x3000)                     |
+| Target Size | 800x600                                   |
+| Layout      | 2 Rows x 4 Columns Grid                  |
 
-RAM   16GB DDR4
+#### 📊 Before vs After Optimization
 
-OS   Windows 11
+| Metric            | Before   | After    | Improvement           |
+| ----------------- | -------- | -------- | --------------------- |
+| Processing Time   | 120s     | 45s      | 🚀 62.5% Faster ⬇️   |
+| Peak Memory       | 2.5GB    | 1.2GB    | 💾 52% Less ⬇️         |
+| File Size         | 50MB     | 45MB     | 📦 10% Smaller ⬇️      |
+| CPU Utilization   | 60%      | 95%      | ⚡ 58% Higher ⬆️        |
 
-Images   100 JPEGs (4000x3000)
+#### ⏱️ Stage-by-Stage Time Comparison
 
-Target Size   800x600
+| Stage        | Before   | After    | Improvement         |
+| ------------ | -------- | -------- | ------------------- |
+| 📦 Load      | 30s      | 10s      | 🚀 67% Faster ⬇️    |
+| 📏 Resize    | 25s      | 8s       | 🚀 68% Faster ⬇️    |
+| 🧩 Stitch    | 20s      | 5s       | 🚀 75% Faster ⬇️    |
+| 💾 Save      | 45s      | 22s      | 🚀 51% Faster ⬇️    |
 
-Layout   2 Rows x 4 Columns Grid
+***
 
-📊 Before vs After Optimization
-Metric   Before   After   Improvement
-Processing Time   120s   45s   🚀 62.5% Faster ⬇️
+### 🎯 8. Best Practices
 
-Peak Memory   2.5GB   1.2GB   💾 52% Less ⬇️
+#### 📋 Quick Processing Workflow
 
-File Size   50MB   45MB   📦 10% Smaller ⬇️
+**Step 1: Prepare Images** 📂
+- ✅ Unify image formats (JPEG recommended)
+- ✅ Resize original images (recommended max 2000x2000)
+- ✅ Remove unwanted images
+- ✅ Check image quality
 
-CPU Utilization   60%   95%   ⚡ 58% Higher ⬆️
+**Step 2: Configure Parameters** ⚙️
+- ✅ Set appropriate grid dimensions
+- ✅ Enable "Uniform Size Pre-processing"
+- ✅ Set target size to 800x600 or 1024x768
+- ✅ Configure margins and spacing
 
-⏱️ Stage-by-Stage Time Comparison
-Stage   Before   After   Improvement
-📦 Load   30s   10s   🚀 67% Faster ⬇️
+**Step 3: Start Processing** ▶️
+- ✅ Preview effect
+- ✅ Adjust parameters
+- ✅ Start stitching
+- ✅ Monitor progress
 
-📏 Resize   25s   8s   🚀 68% Faster ⬇️
+**Step 4: Check Results** ✅
+- ✅ View stitched result
+- ✅ Adjust parameters (if needed)
+- ✅ Re-process (if needed)
+- ✅ Save final result
 
-🧩 Stitch   20s   5s   🚀 75% Faster ⬇️
+#### ❓ Common Performance Issues
 
-💾 Save   45s   22s   🚀 51% Faster ⬇️
+**Issue 1: Slow Processing** ⏱️
 
-🎯 8. Best Practices
+*Causes:*
+- 📏 Image size too large
+- 🎨 Image enhancement enabled
+- 🧵 Insufficient threads
+- 💾 Disk I/O bottleneck
 
-📋 Quick Processing Workflow
+*Solutions:*
+- 📉 Lower resolution
+- ❌ Disable enhancement
+- 🧵 Increase thread count
+- 🚀 Use SSD
 
-Step 1: Prepare Images 📂
-✅ Unify image formats (JPEG recommended).
-✅ Resize original images (recommended max 2000x2000).
-✅ Remove unwanted images.
-✅ Check image quality.
+**Issue 2: Out of Memory** 💾
 
-Step 2: Configure Parameters ⚙️
-✅ Set appropriate grid dimensions.
-✅ Enable "Uniform Size Pre-processing".
-✅ Set target size to 800x600 or 1024x768.
-✅ Configure margins and spacing.
+*Causes:*
+- 📦 Too many images processed simultaneously
+- 🎨 Image enhancement consumes memory
+- 🗃️ Cache too large
 
-Step 3: Start Processing ▶️
-✅ Preview effect.
-✅ Adjust parameters.
-✅ Start stitching.
-✅ Monitor progress.
+*Solutions:*
+- 📉 Reduce simultaneous image count
+- 📦 Process in batches
+- ❌ Disable enhancement
+- 📈 Increase virtual memory
 
-Step 4: Check Results ✅
-✅ View stitched result.
-✅ Adjust parameters (if needed).
-✅ Re-process (if needed).
-✅ Save final result.
+**Issue 3: High CPU Usage** ⚡
 
-❓ Common Performance Issues
+*Causes:*
+- 🧵 Too many threads
+- 🎨 Image enhancement uses CPU
+- 📱 Other programs using CPU
 
-Issue 1: Slow Processing ⏱️
-Causes:
-📏 Image size too large.
-🎨 Image enhancement enabled.
-🧵 Insufficient threads.
-💾 Disk I/O bottleneck.
-Solutions:
-📉 Lower resolution.
-❌ Disable enhancement.
-🧵 Increase thread count.
-🚀 Use SSD.
+*Solutions:*
+- 📉 Reduce thread count
+- ❌ Disable enhancement
+- 📱 Close other programs
 
-Issue 2: Out of Memory 💾
-Causes:
-📦 Too many images processed simultaneously.
-🎨 Image enhancement consumes memory.
-🗃️ Cache too large.
-Solutions:
-📉 Reduce simultaneous image count.
-📦 Process in batches.
-❌ Disable enhancement.
-📈 Increase virtual memory.
+**Issue 4: Slow Saving** 💾
 
-Issue 3: High CPU Usage ⚡
-Causes:
-🧵 Too many threads.
-🎨 Image enhancement uses CPU.
-📱 Other programs using CPU.
-Solutions:
-📉 Reduce thread count.
-❌ Disable enhancement.
-📱 Close other programs.
+*Causes:*
+- 💾 Disk I/O bottleneck
+- 📷 JPEG quality too high
+- 📦 Improper save format
 
-Issue 4: Slow Saving 💾
-Causes:
-💾 Disk I/O bottleneck.
-📷 JPEG quality too high.
-📦 Improper save format.
-Solutions:
-📉 Lower JPEG quality.
-🚀 Use SSD.
-📦 Batch saving.
+*Solutions:*
+- 📉 Lower JPEG quality
+- 🚀 Use SSD
+- 📦 Batch saving
 
-✅ Performance Tuning Checklist
+#### ✅ Performance Tuning Checklist
 
-[ ] Are image sizes appropriate?
-[ ] Is image enhancement necessary?
-[ ] Are thread counts reasonable?
-[ ] Is memory usage normal?
-[ ] Is CPU usage normal?
-[ ] Is disk I/O a bottleneck?
-[ ] Is JPEG quality appropriate?
+```markdown
+- [ ] Are image sizes appropriate?
+- [ ] Is image enhancement necessary?
+- [ ] Are thread counts reasonable?
+- [ ] Is memory usage normal?
+- [ ] Is CPU usage normal?
+- [ ] Is disk I/O a bottleneck?
+- [ ] Is JPEG quality appropriate?
+```
 
-🚀 9. Advanced Optimization Techniques
+***
 
-📦 Batch Processing Optimization
+### 🚀 9. Advanced Optimization Techniques
 
+#### 📦 Batch Processing Optimization
+
+```python
 def batch_process(images, batch_size=10):
     """Batch processing optimization - Control peak memory"""
     results = []
@@ -2058,18 +2072,20 @@ def batch_process(images, batch_size=10):
         batch = images[i:i+batch_size]
         results.extend(process_batch(batch))
     return results
+```
 
-Advantages:
-📉 Controls peak memory.
-📊 Balances load.
-🔄 Easy to manage.
+**Advantages:**
+- 📉 Controls peak memory
+- 📊 Balances load
+- 🔄 Easy to manage
 
-🗃️ Memory Pool Optimization
+#### 🗃️ Memory Pool Optimization
 
+```python
 class MemoryPool:
     """Memory pool optimization - Avoid frequent alloc/free"""
     
-    def init(self, max_size=100):
+    def __init__(self, max_size=100):
         self.pool = []
         self.max_size = max_size
         
@@ -2081,14 +2097,43 @@ class MemoryPool:
         
     def put(self, obj):
         """Return object to pool"""
-        if len(self.pool) 
+        if len(self.pool) < self.max_size:
+            self.pool.append(obj)
+```
+
+**Advantages:**
+- 🔄 Avoids frequent allocation
+- 💾 Reduces memory fragmentation
+- ⚡ Improves allocation speed
+
+#### 🚀 Preload Optimization
+
+```python
+def preload_images(image_paths, target_size):
+    """Preload optimization - Parallel image loading"""
+    futures = []
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        for path in image_paths:
+            future = executor.submit(load_and_resize, path, target_size)
+            futures.append(future)
+    
+    return [f.result() for f in futures]
+```
+
+**Advantages:**
+- ⏱️ Reduces waiting time
+- 📦 Parallel loading
+- 🚀 Improves efficiency
+
+***
 
 <a id="en-architecture"></a>
 
-�️ Technical Architecture
+## 🏗️ Technical Architecture
 
-�🏢 Core Component Architecture
+### 🏢 Core Component Architecture
 
+```
 image_stitcher/
 ├── app.py                  # 🖥️ Main App Interface (Tkinter GUI)
 ├── config.py               # ⚙️ Config Management (Save/Load/Validate)
@@ -2101,33 +2146,34 @@ image_stitcher/
 ├── utils.py                # 🛠️ Utility Functions
 ├── resource_monitor.py     # 📊 System Resource Monitoring
 └── memory_pool.py          # 🗃️ Memory Pool Management (NumPy Array Reuse)
+```
 
-🔄 Pipeline Architecture Diagram
+### 🔄 Pipeline Architecture Diagram
 
+```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │  Image Load │ →  │   Resize    │ →  │ Enhancement │ →  │ Grid Stitch │
-│ (Multi-thread)│  │  (OpenCV)   │    │   (PIL)     │    │  (NumPy)    │
+│(Multi-thread)│   │  (OpenCV)   │    │   (PIL)     │    │  (NumPy)    │
 └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
         ↓                    ↓                    ↓                    ↓
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │ Post-Process│ →  │ Async Save  │    │             │    │             │
-│  (Flip etc) │    │ (Thread Pool)│    │             │    │             │
+│  (Flip etc) │    │(Thread Pool)│    │             │    │             │
 └─────────────┘    └─────────────┘    │             │    │             │
                                       └─────────────┘    └─────────────┘
+```
 
-🎯 Three-Layer Processing Optimization
-Layer   Component   Optimization Tech   Effect
-Image Layer   image_processor.py   libvips → OpenCV → PIL Fallback   Best Performance
+### 🎯 Three-Layer Processing Optimization
 
-Pipeline Layer   pipeline_pool.py   Dynamic Parallel Pipelines   Smart Load Balancing
+| Layer           | Component              | Optimization Tech                       | Effect               |
+| --------------- | --------------------- | -------------------------------------- | ------------------- |
+| Image Layer     | image_processor.py    | libvips → OpenCV → PIL Fallback       | Best Performance    |
+| Pipeline Layer  | pipeline_pool.py      | Dynamic Parallel Pipelines            | Smart Load Balancing |
+| Memory Layer    | memory_pool.py        | NumPy Array Reuse                      | Reduced GC Pressure |
 
-Memory Layer   memory_pool.py   NumPy Array Reuse   Reduced GC Pressure
+### Thread Pool Management
 
-Pipeline Architecture Detail
-(See diagram above)
-
-Thread Pool Management
-
+```python
 import os
 import psutil
 from concurrent.futures import ThreadPoolExecutor
@@ -2145,19 +2191,24 @@ def calculate_thread_pool_sizes():
         'load': load_threads,
         'save': save_threads
     }
+```
 
-Adjustment Strategy:
-Resource   Adjustment Method   Description
-CPU Cores   Threads = min(8, cpu_count)   Maximize CPU utilization
+**Adjustment Strategy:**
 
-RAM Size   Threads = min(4, cpu_count // 2)   Prevent out-of-memory
+| Resource     | Adjustment Method                      | Description              |
+| ------------ | -------------------------------------- | ------------------------ |
+| CPU Cores    | Threads = min(8, cpu_count)            | Maximize CPU utilization |
+| RAM Size     | Threads = min(4, cpu_count // 2)       | Prevent out-of-memory    |
+| Load         | Dynamic Adjustment                     | Adjust based on real-time load |
+| Monitoring   | Real-time Monitoring                    | Ensure system stability |
 
-Load   Dynamic Adjustment   Adjust based on real-time load
+***
 
-Monitoring   Real-time Monitoring   Ensure system stability
+<a id="en-file-structure"></a>
 
-📁 File Structure
+## 📁 File Structure
 
+```
 project_root/
 ├── dist/                      # Packaged executables
 │   ├── ImageStitcher.exe     # Main Program
@@ -2165,7 +2216,7 @@ project_root/
 ├── build/                     # Build temporary files
 ├── schemes/                   # Saved schemes
 ├── image_stitcher/            # Source Code
-│   ├── init.py
+│   ├── __init__.py
 │   ├── app.py
 │   ├── config.py
 │   ├── image_processor.py
@@ -2179,68 +2230,83 @@ project_root/
 ├── build_exe.py              # Packaging Script
 ├── requirements.txt          # Dependency List
 └── README.md                 # This File
+```
 
-❓ FAQ
+<a id="en-faq"></a>
 
-Q1: How to package as EXE?
+## ❓ FAQ
 
+### Q1: How to package as EXE?
+
+```bash
 python build_exe.py
+```
 
-The packaged file will be in the dist/ directory.
+The packaged file will be in the `dist/` directory.
 
-Q2: What to do if out of memory when processing many images?
+### Q2: What to do if out of memory when processing many images?
 
-Reduce the number of images processed simultaneously.
-Turn off image enhancement features.
-Increase system virtual memory.
-Process images in batches.
+- Reduce the number of images processed simultaneously
+- Turn off image enhancement features
+- Increase system virtual memory
+- Process images in batches
 
-Q3: Why are there black or white borders in the result?
+### Q3: Why are there black or white borders in the result?
 
-Adjust margin parameters.
-Check if image sizes are consistent.
-Adjust grid parameters.
+- Adjust margin parameters
+- Check if image sizes are consistent
+- Adjust grid parameters
 
-Q4: How to generate reversed versions?
+### Q4: How to generate reversed versions?
 
-Select "Grid Layout".
-Set rows and columns.
-Check "Generate Reversed Version".
-Start stitching.
+1. Select "Grid Layout"
+2. Set rows and columns
+3. Check "Generate Reversed Version"
+4. Start stitching
 
 The reversed version will reverse the order of images in each row, including empty slots.
 
-Q5: Where is the configuration file?
+### Q5: Where is the configuration file?
 
-The configuration file is saved in the project root directory: image_stitcher_config.json.
+The configuration file is saved in the project root directory: `image_stitcher_config.json`
 
-Q6: How to save stitching schemes?
+### Q6: How to save stitching schemes?
 
 Click the "Save Scheme" button to save the current configuration as a scheme file.
 
-📝 Changelog
+<a id="en-changelog"></a>
 
-v1.0.0
+## 📝 Changelog
 
-Initial release.
-Support for multiple stitching layouts.
-Image enhancement support.
-Support for flipping and reversed versions.
-Multi-threaded processing.
-Configuration saving and loading.
+### v1.0.0
 
-🤝 Contributing
+- Initial release
+- Support for multiple stitching layouts
+- Image enhancement support
+- Support for flipping and reversed versions
+- Multi-threaded processing
+- Configuration saving and loading
+
+<a id="en-contributing"></a>
+
+## 🤝 Contributing
 
 Issues and Pull Requests are welcome!
 
-📄 License
+<a id="en-license"></a>
+
+## 📄 License
 
 MIT License
 
-🙏 Acknowledgements
+<a id="en-acknowledgements"></a>
 
-Python & Tkinter
-Pillow (PIL)
-NumPy
+## 🙏 Acknowledgements
 
-Last Updated: 2026-03-19
+- Python & Tkinter
+- Pillow (PIL)
+- NumPy
+
+***
+
+**Last Updated:** 2026-03-19
